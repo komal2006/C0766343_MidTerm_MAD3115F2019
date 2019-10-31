@@ -36,8 +36,8 @@
                                 <rect key="frame" x="57" y="467" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remeber Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veM-zJ-fzd">
-                                <rect key="frame" x="149" y="471" width="109" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remember Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veM-zJ-fzd">
+                                <rect key="frame" x="149" y="471" width="125" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
@@ -48,8 +48,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sign In" id="3f5-Sa-qgg">
+                        <barButtonItem key="backBarButtonItem" title="Logout" id="5YN-L8-ml9"/>
                         <barButtonItem key="rightBarButtonItem" title="Log in" id="IRk-03-qLd">
                             <connections>
+                                <action selector="btnLogin:" destination="BYZ-38-t0r" id="r1h-nm-fdl"/>
                                 <segue destination="ORO-Pi-bTH" kind="show" id="9FX-RI-7U5"/>
                             </connections>
                         </barButtonItem>
