@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BE24963236B4750007D168F /* CustomerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE24962236B4750007D168F /* CustomerListTableViewController.swift */; };
 		9BFC24BB236B3F0A00DEE192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFC24BA236B3F0A00DEE192 /* AppDelegate.swift */; };
 		9BFC24BD236B3F0A00DEE192 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFC24BC236B3F0A00DEE192 /* ViewController.swift */; };
 		9BFC24C0236B3F0A00DEE192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFC24BE236B3F0A00DEE192 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BE24962236B4750007D168F /* CustomerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewController.swift; sourceTree = "<group>"; };
 		9BFC24B7236B3F0A00DEE192 /* C0766343_MidTerm_MAD3115F2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C0766343_MidTerm_MAD3115F2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BFC24BA236B3F0A00DEE192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BFC24BC236B3F0A00DEE192 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				9BFC24CC236B403600DEE192 /* lambton.png */,
 				9BFC24C3236B3F0B00DEE192 /* LaunchScreen.storyboard */,
 				9BFC24C6236B3F0B00DEE192 /* Info.plist */,
+				9BE24962236B4750007D168F /* CustomerListTableViewController.swift */,
 			);
 			path = C0766343_MidTerm_MAD3115F2019;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BFC24BD236B3F0A00DEE192 /* ViewController.swift in Sources */,
+				9BE24963236B4750007D168F /* CustomerListTableViewController.swift in Sources */,
 				9BFC24BB236B3F0A00DEE192 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
