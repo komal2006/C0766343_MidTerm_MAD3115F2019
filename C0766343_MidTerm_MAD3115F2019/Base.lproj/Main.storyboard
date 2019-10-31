@@ -32,39 +32,39 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GC2-jK-yQX">
-                                <rect key="frame" x="57" y="467" width="49" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remember Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Nt-eQ-frN">
+                                <rect key="frame" x="140" y="502" width="195" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remember Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veM-zJ-fzd">
-                                <rect key="frame" x="149" y="471" width="125" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hQp-5S-bCT">
+                                <rect key="frame" x="57" y="502" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.4386492927309591" green="1" blue="0.20809227364354377" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </switch>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sign In" id="3f5-Sa-qgg">
                         <barButtonItem key="backBarButtonItem" title="Logout" id="5YN-L8-ml9"/>
                         <barButtonItem key="rightBarButtonItem" title="Log in" id="IRk-03-qLd">
                             <connections>
-                                <action selector="btnLogin:" destination="BYZ-38-t0r" id="NW7-ve-iwY"/>
+                                <action selector="btnLogin:" destination="BYZ-38-t0r" id="nSk-yw-tad"/>
                                 <segue destination="pnu-FP-7c9" kind="show" id="SwT-mn-1kj"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="RememberMeBtn" destination="8bC-Xf-vdC" id="YMZ-Af-rcy"/>
                         <outlet property="txtEmail" destination="1bP-ut-cGP" id="xhp-U2-Zwc"/>
                         <outlet property="txtPassword" destination="h9E-j9-Lzs" id="lWY-lq-674"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-123" y="810"/>
+            <point key="canvasLocation" x="-123.18840579710145" y="809.59821428571422"/>
         </scene>
         <!--Customers-->
         <scene sceneID="cAO-PF-4bW">
