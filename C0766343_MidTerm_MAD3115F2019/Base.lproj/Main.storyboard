@@ -13,7 +13,7 @@
         <!--Sign In-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="C0766343_MidTerm_MAD3115F2019" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="C0766343_MidTerm_MAD3115F2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,11 +51,16 @@
                         <barButtonItem key="backBarButtonItem" title="Logout" id="5YN-L8-ml9"/>
                         <barButtonItem key="rightBarButtonItem" title="Log in" id="IRk-03-qLd">
                             <connections>
-                                <action selector="btnLogin:" destination="BYZ-38-t0r" id="r1h-nm-fdl"/>
+                                <action selector="btnLogin:" destination="BYZ-38-t0r" id="NW7-ve-iwY"/>
                                 <segue destination="ORO-Pi-bTH" kind="show" id="9FX-RI-7U5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="RememberMeBtn" destination="8bC-Xf-vdC" id="YMZ-Af-rcy"/>
+                        <outlet property="txtEmail" destination="1bP-ut-cGP" id="MDV-Sr-JYZ"/>
+                        <outlet property="txtPassword" destination="h9E-j9-Lzs" id="JEi-Od-Eou"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
