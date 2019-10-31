@@ -18,9 +18,9 @@ class CustomerListTableViewController: UIViewController {
         let sb1 = UIStoryboard(name: "Main", bundle: nil)
         let NewCustomerVC = sb1.instantiateViewController(withIdentifier: "NewCustomerVC") as! NewCustomerViewController
         navigationController?.pushViewController(NewCustomerVC, animated: true)
-
+      }
         
-    }
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
