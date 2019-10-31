@@ -23,6 +23,28 @@ class LoginViewController: UIViewController {
     
    
     @IBAction func btnLogin(_ sender: Any) {
+//        let email = txtEmail.text!
+//        print("Hello \(email)")
+//        let pswd = txtPassword.text
+//
+//        if email == "komaldeepkr99@gmail.com"
+//        {
+//            if pswd == "deep123"
+//            {
+//                print("Signed In ")
+//            }
+//        }
+//        else
+//        {
+//            print("username or password is incorrect")
+//        }
+//
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let CustomerVC = sb.instantiateViewController(withIdentifier: "CustomerVC") as! CustomerListTableViewController
+        
+        
+        navigationController?.pushViewController(CustomerVC, animated: true)
     }
     
 
