@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        showVersion()
+
         
         let getdata = Singleton.getInstance()
         getdata.createCust()
@@ -52,20 +52,12 @@ class LoginViewController: UIViewController {
             }
             
             
-//            let sb=UIStoryboard(name: "Main", bundle: nil)
-//            let customerListVC=sb.instantiateViewController(identifier: "customerListVC") as! CustomerListViewController
-//            navigationController?.pushViewController(customerListVC, animated: true)
-        
-        
-        
-//
-        
         let sb = UIStoryboard(name: "Main", bundle: nil)
-        let CustomerVC = sb.instantiateViewController(withIdentifier: "CustomerVC") as! CustomerListTableViewController
-        
-        
-        navigationController?.pushViewController(CustomerVC, animated: true)
-    }
+       let CustomerVC = sb.instantiateViewController(withIdentifier: "CustomerVC") as! CustomerListTableViewController
+
+
+       navigationController?.pushViewController(CustomerVC, animated: true)
+   }
     }
         
         
@@ -74,9 +66,9 @@ class LoginViewController: UIViewController {
                 let dictionary = NSMutableDictionary(contentsOfFile: bundlePath)
                 let CustomersList = dictionary!["Customers"] as! NSArray
                 
-                for u in CustomersList
+                for c in CustomersList
                 {
-                    let customer = u as! NSDictionary
+                    let customer = c as! NSDictionary
                     let email = customer["Email"]! as! String
                     let pwd = customer["Password"]! as! String
                     if email==txtEmail.text! && pwd==txtPassword.text!
