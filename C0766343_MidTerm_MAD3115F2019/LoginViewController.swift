@@ -32,10 +32,13 @@ class LoginViewController: UIViewController {
         if let email = uDefault.value(forKey: "Email"){
             txtEmail.text = email as? String
         }
+            
+       
         
         if let Password = uDefault.value(forKey: "Password"){
             txtPassword.text = Password as? String
         }
+        
     }
     
    
@@ -57,7 +60,10 @@ class LoginViewController: UIViewController {
 
 
        navigationController?.pushViewController(CustomerVC, animated: true)
-   }
+               }else{
+                print("Incorrect Email or Password")
+        }
+        
     }
         
         
