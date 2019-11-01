@@ -67,10 +67,8 @@ class LoginViewController: UIViewController {
             let alert = UIAlertController(title: "Invalid Email Or Password", message: "Enter valid Email or Password", preferredStyle: .alert)
             
             alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
-            alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: {action
-                in
-                print("Cancel clicked")
-            }))
+            alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+           
             self.present(alert, animated: true)
             print("Incorrect Email or Password")
         }
