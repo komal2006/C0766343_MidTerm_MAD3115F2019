@@ -33,21 +33,21 @@ class NewCustomerViewController: UIViewController {
     @objc
     func saveCustomer(sender: UIBarButtonItem)
     {
-        print("Customer Added")
+        //print("Customer Added")
         let sb1=UIStoryboard(name: "Main", bundle: nil)
         let customerListVC=sb1.instantiateViewController(withIdentifier: "customerListVC") as! CustomerListTableViewController
         navigationController?.pushViewController(customerListVC, animated: true)
         
         
         let custID = customerID.text
-        let Fname = firstName.text
-        let Lname = lastName.text
+        let fName = firstName.text
+        let lName = lastName.text
     
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+      // saveCustomerButton()
+        
     }
     
 
