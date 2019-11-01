@@ -12,7 +12,14 @@ class Customer
     var customerID : Int?
     var customerFName: String?
     var customerLName : String?
+    var fullName : String
+    {
+        return customerFName! + " " + customerLName!
+    }
    
+        
+        
+    }
 
 }
 
