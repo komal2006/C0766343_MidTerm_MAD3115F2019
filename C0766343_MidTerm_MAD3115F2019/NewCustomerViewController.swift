@@ -21,7 +21,7 @@ class NewCustomerViewController: UIViewController {
     
     @IBAction func btnSave(_ sender: UIBarButtonItem) {
       
-        let fName = firstName.text
+       let fName = firstName.text
         let lName = lastName.text
     }
     

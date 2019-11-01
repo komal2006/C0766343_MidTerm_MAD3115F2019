@@ -15,11 +15,11 @@ class CustomerListTableViewController: UIViewController, UITableViewDataSource, 
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tempvar.returnCount()
+        return single.returnCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let x = tempvar.returnCustObject(custID: Int(indexPath.row+1))
+        let x = single.returnCustObject(custID: Int(indexPath.row+1))
         let cell = tableView.dequeueReusableCell(withIdentifier: "mycell", for: indexPath)
         cell.textLabel?.text = x?.fullName
         return cell
@@ -44,15 +44,15 @@ class CustomerListTableViewController: UIViewController, UITableViewDataSource, 
         customerTV.delegate=self
         customerTV.dataSource=self
         navigationItem.hidesBackButton=true
-        addLogoutButton()
-        addCustomerButton()
+       addLogoutButton()
+        //addCustomerButton()
     }
     
 
     private func addLogoutButton()
     {
         let btnLogout=UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(CustomerListTableViewController.logout(sender:)))
-        
+
         navigationItem.leftBarButtonItem=btnLogout
     }
     @objc
@@ -61,23 +61,23 @@ class CustomerListTableViewController: UIViewController, UITableViewDataSource, 
         print("logout")
         navigationController?.popViewController(animated: true)
     }
-    private func addCustomerButton()
-    {
-        let btnLogout=UIBarButtonItem(title: "ADD", style: .done, target: self, action: #selector(CustomerListTableViewController.addCustomer(sender:)))
-        
-        navigationItem.rightBarButtonItem=btnLogout
-    }
-    
-    @objc
-    func addCustomer(sender: UIBarButtonItem)
-    {
-        print("Customer Added")
-        let sb1=UIStoryboard(name: "Main", bundle: nil)
-        let addCustomerVC=sb1.instantiateViewController(withIdentifier: "addCustomerVC") as! NewCustomerViewController
-        navigationController?.pushViewController(addCustomerVC, animated: true)
-        
-    }
-    var tempvar = Singleton.getInstance()
+//    private func addCustomerButton()
+//    {
+//        let btnLogout=UIBarButtonItem(title: "ADD", style: .done, target: self, action: #selector(CustomerListTableViewController.addCustomer(sender:)))
+//
+//        navigationItem.rightBarButtonItem=btnLogout
+//    }
+//
+//    @objc
+//    func addCustomer(sender: UIBarButtonItem)
+//    {
+//        print("Customer Added")
+//        let sb1=UIStoryboard(name: "Main", bundle: nil)
+//        let addCustomerVC=sb1.instantiateViewController(withIdentifier: "addCustomerVC") as! NewCustomerViewController
+//        navigationController?.pushViewController(addCustomerVC, animated: true)
+//
+//    }
+   var single = Singleton.getInstance()
     
     override func viewWillAppear(_ animated: Bool) {
         customerTV.reloadData()
