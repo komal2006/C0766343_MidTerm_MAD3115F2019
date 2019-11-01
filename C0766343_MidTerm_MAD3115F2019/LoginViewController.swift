@@ -17,7 +17,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var btnLogin: UIBarButtonItem!
     
     @IBOutlet weak var btnSwitch: UISwitch!
-    var uDefault:UserDefaults!
+    
     
     
     
