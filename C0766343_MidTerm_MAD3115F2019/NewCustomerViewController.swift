@@ -19,12 +19,31 @@ class NewCustomerViewController: UIViewController {
     
     @IBOutlet var emailAddress: UITextField!
     
-    @IBAction func btnSave(_ sender: UIBarButtonItem) {
+  
       
-       let fName = firstName.text
-        let lName = lastName.text
+    
+    
+    private func saveCustomerButton()
+    {
+        let btnSave=UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(NewCustomerViewController.saveCustomer(sender:)))
+        
+        navigationItem.rightBarButtonItem=btnSave
     }
     
+    @objc
+    func saveCustomer(sender: UIBarButtonItem)
+    {
+        print("Customer Added")
+        let sb1=UIStoryboard(name: "Main", bundle: nil)
+        let customerListVC=sb1.instantiateViewController(withIdentifier: "customerListVC") as! CustomerListTableViewController
+        navigationController?.pushViewController(customerListVC, animated: true)
+        
+        
+        let custID = customerID.text
+        let Fname = firstName.text
+        let Lname = lastName.text
+    
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

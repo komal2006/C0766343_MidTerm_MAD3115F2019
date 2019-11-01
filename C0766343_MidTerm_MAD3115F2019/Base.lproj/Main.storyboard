@@ -137,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lpq-EG-dvd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1606" y="1068"/>
+            <point key="canvasLocation" x="3294" y="1508"/>
         </scene>
         <!--Add New Customer-->
         <scene sceneID="ach-UT-0tG">
@@ -180,11 +180,7 @@
                         <viewLayoutGuide key="safeArea" id="fqo-sr-5dr"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Customer" id="Frg-9v-vhp">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="iwP-P6-lYe">
-                            <connections>
-                                <action selector="btnSave:" destination="JeV-r7-g6G" id="O5f-GR-rLK"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="iwP-P6-lYe"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
@@ -196,7 +192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F3d-WF-NNh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1575" y="234"/>
+            <point key="canvasLocation" x="1741" y="810"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lgH-gg-6ik">
