@@ -49,7 +49,8 @@ class LoginViewController: UIViewController {
             if self.btnSwitch.isOn{
                 self.uDefault.set(txtEmail.text, forKey: "Email")
                 self.uDefault.set(txtPassword.text, forKey: "Password")
-            }else{
+            }else
+            {
                 self.uDefault.removeObject(forKey: "Email")
                 self.uDefault.removeObject(forKey: "Password")
             }
