@@ -61,8 +61,18 @@ class LoginViewController: UIViewController {
 
 
        navigationController?.pushViewController(CustomerVC, animated: true)
-               }else{
-                print("Incorrect Email or Password")
+                
+        }else
+        {
+            let alert = UIAlertController(title: "Invalid Email Or Password", message: "Enter valid Email or Password", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
+            alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: {action
+                in
+                print("Cancel clicked")
+            }))
+            self.present(alert, animated: true)
+            print("Incorrect Email or Password")
         }
         
     }
@@ -90,13 +100,7 @@ class LoginViewController: UIViewController {
         }
         
         
-//        func showVersion()
-//        {
-//            if let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString"), let versionCode = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion")  {
-//
-//                lblVersion.text = "Version \(version) (\(versionCode))"
-//            }
-//
+
 
 
 }

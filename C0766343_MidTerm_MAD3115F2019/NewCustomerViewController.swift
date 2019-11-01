@@ -19,7 +19,7 @@ class NewCustomerViewController: UIViewController {
     
     @IBOutlet var emailAddress: UITextField!
     
-  
+  let add = Singleton.getInstance()
       
     
     
@@ -43,6 +43,27 @@ class NewCustomerViewController: UIViewController {
         let fName = firstName.text
         let lName = lastName.text
     
+        if isValidEmail()
+        {
+            
+            let email = emailAddress.text
+            add.addNewCustomer(First_Name: fName!, Last_Name: lName!, email: email!)
+            
+            let alert = UIAlertController(title: "Success", message: "Congrats! Added Successfully", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            
+            self.present(alert, animated: true)
+        }
+        else{
+            
+            let alert = UIAlertController(title: "INVALID EMAIL!", message: "Please Enter a Valid Email Address", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            
+            self.present(alert, animated: true)
+            
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
