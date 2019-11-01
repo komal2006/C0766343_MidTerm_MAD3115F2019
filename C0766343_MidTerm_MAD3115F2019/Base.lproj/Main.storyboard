@@ -57,6 +57,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="btnLogin" destination="IRk-03-qLd" id="e6t-f9-HXQ"/>
+                        <outlet property="btnSwitch" destination="hQp-5S-bCT" id="u9L-o9-1CX"/>
                         <outlet property="txtEmail" destination="1bP-ut-cGP" id="xhp-U2-Zwc"/>
                         <outlet property="txtPassword" destination="h9E-j9-Lzs" id="lWY-lq-674"/>
                     </connections>
@@ -162,21 +164,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WNj-Yp-5Hb">
-                                <rect key="frame" x="20" y="462" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fqo-sr-5dr"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Customer" id="Frg-9v-vhp">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="iwP-P6-lYe"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="iwP-P6-lYe">
+                            <connections>
+                                <action selector="btnSave:" destination="JeV-r7-g6G" id="O5f-GR-rLK"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="customerID" destination="btD-vY-mhU" id="I0c-bF-VF9"/>
+                        <outlet property="emailAddress" destination="ZLd-8F-RDP" id="t0e-Dn-KOJ"/>
+                        <outlet property="firstName" destination="6Fo-gi-fRu" id="J41-QB-QVd"/>
+                        <outlet property="lastName" destination="Bb5-ei-ggM" id="djI-IS-qh1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F3d-WF-NNh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,6 +10,21 @@ import UIKit
 
 class NewCustomerViewController: UIViewController {
 
+    @IBOutlet weak var customerID: UITextField!
+    
+    
+    @IBOutlet weak var firstName: UITextField!
+    
+    @IBOutlet weak var lastName: UITextField!
+    
+    @IBOutlet var emailAddress: UITextField!
+    
+    @IBAction func btnSave(_ sender: UIBarButtonItem) {
+      
+        let fName = firstName.text
+        let lName = lastName.text
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,14 +32,10 @@ class NewCustomerViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func isValidEmail() -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: emailAddress.text!)
     }
-    */
-
 }
