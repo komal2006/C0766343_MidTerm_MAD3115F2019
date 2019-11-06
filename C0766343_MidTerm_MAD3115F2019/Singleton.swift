@@ -2,7 +2,7 @@
 //  Singleton.swift
 //  C0766343_MidTerm_MAD3115F2019
 //
-//  Created by MacStudent on 2019-11-01.
+//  Created by MacStudent on 2019-11-06.
 //  Copyright © 2019 MacStudent. All rights reserved.
 //
 

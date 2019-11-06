@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		9B928896236BB32A00396040 /* Customers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B928895236BB32A00396040 /* Customers.plist */; };
 		9B928898236BB75D00396040 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B928897236BB75D00396040 /* Customer.swift */; };
+		9BBBF4202373829A00CD7A8C /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBBF41F2373829A00CD7A8C /* Singleton.swift */; };
 		9BE24963236B4750007D168F /* CustomerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE24962236B4750007D168F /* CustomerListTableViewController.swift */; };
 		9BE3A022236B8D7B00C8507D /* NewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE3A021236B8D7B00C8507D /* NewCustomerViewController.swift */; };
 		9BE3A024236B8E8C00C8507D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE3A023236B8E8C00C8507D /* LoginViewController.swift */; };
-		9BEF8E15236CCD920071A1D8 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF8E14236CCD920071A1D8 /* Singleton.swift */; };
 		9BFC24BB236B3F0A00DEE192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFC24BA236B3F0A00DEE192 /* AppDelegate.swift */; };
 		9BFC24C0236B3F0A00DEE192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFC24BE236B3F0A00DEE192 /* Main.storyboard */; };
 		9BFC24C2236B3F0B00DEE192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BFC24C1236B3F0B00DEE192 /* Assets.xcassets */; };
@@ -23,10 +23,10 @@
 /* Begin PBXFileReference section */
 		9B928895236BB32A00396040 /* Customers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Customers.plist; sourceTree = "<group>"; };
 		9B928897236BB75D00396040 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		9BBBF41F2373829A00CD7A8C /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		9BE24962236B4750007D168F /* CustomerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewController.swift; sourceTree = "<group>"; };
 		9BE3A021236B8D7B00C8507D /* NewCustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCustomerViewController.swift; sourceTree = "<group>"; };
 		9BE3A023236B8E8C00C8507D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		9BEF8E14236CCD920071A1D8 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Singleton.swift; path = ../../../Desktop/komal/C0766343_MidTerm_MAD3115F2019/Singleton.swift; sourceTree = "<group>"; };
 		9BFC24B7236B3F0A00DEE192 /* C0766343_MidTerm_MAD3115F2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C0766343_MidTerm_MAD3115F2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BFC24BA236B3F0A00DEE192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BFC24BF236B3F0A00DEE192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 				9BE24962236B4750007D168F /* CustomerListTableViewController.swift */,
 				9BE3A021236B8D7B00C8507D /* NewCustomerViewController.swift */,
 				9B928895236BB32A00396040 /* Customers.plist */,
-				9BEF8E14236CCD920071A1D8 /* Singleton.swift */,
+				9BBBF41F2373829A00CD7A8C /* Singleton.swift */,
 			);
 			path = C0766343_MidTerm_MAD3115F2019;
 			sourceTree = "<group>";
@@ -164,7 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BE3A024236B8E8C00C8507D /* LoginViewController.swift in Sources */,
-				9BEF8E15236CCD920071A1D8 /* Singleton.swift in Sources */,
+				9BBBF4202373829A00CD7A8C /* Singleton.swift in Sources */,
 				9B928898236BB75D00396040 /* Customer.swift in Sources */,
 				9BE3A022236B8D7B00C8507D /* NewCustomerViewController.swift in Sources */,
 				9BE24963236B4750007D168F /* CustomerListTableViewController.swift in Sources */,
