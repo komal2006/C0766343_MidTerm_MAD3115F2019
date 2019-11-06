@@ -45,7 +45,7 @@
                                 <color key="onTintColor" red="0.4386492927309591" green="1" blue="0.20809227364354377" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </switch>
                         </subviews>
-                        <color key="backgroundColor" red="0.87628208356041826" green="1" blue="0.96856104002949295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.52712550825495907" green="0.70865450528080909" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sign In" id="3f5-Sa-qgg">
@@ -79,7 +79,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94355148858362048" green="1" blue="0.85634713119699779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" red="0.46043792662458538" green="0.69844963873907084" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mycell" id="M10-hT-Z9f" userLabel="mycell">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
@@ -176,7 +176,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.54798357005824228" green="0.71737315452337691" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="fqo-sr-5dr"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Customer" id="Frg-9v-vhp">
