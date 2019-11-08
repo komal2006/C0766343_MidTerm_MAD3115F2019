@@ -7,3 +7,24 @@
 //
 
 import Foundation
+class Hydro: Bill{
+    
+    var agency:String
+    var unitsConsumed: Int
+    init(billId: Int, billDate:String, billType:Bill.TypesOfBill, billAmount: Float, agency:String, unitsConsumed: Int)
+    {
+        
+        self.agency = agency
+        self.unitsConsumed = unitsConsumed
+        super.init(billId: billId, billDate: billDate, billType: billType
+            , billAmount: billAmount)
+        
+    }
+    override func display()
+    {
+        super.display()
+        print("Agency Name: \(agency)")
+        print("Units Consumed: \(unitsConsumed.insertUnits())")
+    }
+    
+}
