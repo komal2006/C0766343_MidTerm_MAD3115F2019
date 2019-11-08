@@ -47,7 +47,7 @@ class CustomerListTableViewController: UIViewController, UITableViewDataSource, 
         customerTV.dataSource=self
         navigationItem.hidesBackButton=true
        addLogoutButton()
-        //addCustomerButton()
+        addCustomerButton()
     }
     
 
@@ -73,7 +73,7 @@ class CustomerListTableViewController: UIViewController, UITableViewDataSource, 
     @objc
     func addCustomer(sender: UIBarButtonItem)
     {
-        print("Customer Added")
+        //print("Customer Added")
         let sb1=UIStoryboard(name: "Main", bundle: nil)
         let addCustomerVC=sb1.instantiateViewController(withIdentifier: "addCustomerVC") as! NewCustomerViewController
         navigationController?.pushViewController(addCustomerVC, animated: true)
