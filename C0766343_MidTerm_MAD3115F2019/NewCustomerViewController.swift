@@ -10,7 +10,7 @@ import UIKit
 
 class NewCustomerViewController: UIViewController {
 
-    @IBOutlet weak var customerID: UITextField!
+    //@IBOutlet weak var customerID: UITextField!
     
     
     @IBOutlet weak var firstName: UITextField!
@@ -39,7 +39,7 @@ class NewCustomerViewController: UIViewController {
         navigationController?.pushViewController(customerListVC, animated: true)
         
         
-        let custID = customerID.text
+       // let custID = customerID.text
         let fName = firstName.text
         let lName = lastName.text
     
@@ -67,7 +67,7 @@ class NewCustomerViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-      // saveCustomerButton()
+    // saveCustomerButton()
         
     }
     

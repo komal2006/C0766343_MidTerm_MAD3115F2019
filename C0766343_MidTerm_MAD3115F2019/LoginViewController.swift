@@ -57,7 +57,7 @@ class LoginViewController: UIViewController {
             
             
         let sb = UIStoryboard(name: "Main", bundle: nil)
-       let CustomerVC = sb.instantiateViewController(withIdentifier: "CustomerVC") as! CustomerListTableViewController
+       let CustomerVC = sb.instantiateViewController(withIdentifier: "customerListVC") as! CustomerListTableViewController
 
 
        navigationController?.pushViewController(CustomerVC, animated: true)

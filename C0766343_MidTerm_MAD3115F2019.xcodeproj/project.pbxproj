@@ -10,6 +10,9 @@
 		9B6D4AE7237500DA002C5CD2 /* customer.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D4AE6237500DA002C5CD2 /* customer.png */; };
 		9B928896236BB32A00396040 /* Customers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B928895236BB32A00396040 /* Customers.plist */; };
 		9B928898236BB75D00396040 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B928897236BB75D00396040 /* Customer.swift */; };
+		9BB507542375E39000E7B626 /* BillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB507532375E39000E7B626 /* BillDetailsViewController.swift */; };
+		9BB507572375E77F00E7B626 /* extension+currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB507562375E77F00E7B626 /* extension+currency.swift */; };
+		9BB507592375E80C00E7B626 /* extension+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB507582375E80C00E7B626 /* extension+Int.swift */; };
 		9BBBF4202373829A00CD7A8C /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBBF41F2373829A00CD7A8C /* Singleton.swift */; };
 		9BE24963236B4750007D168F /* CustomerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE24962236B4750007D168F /* CustomerListTableViewController.swift */; };
 		9BE3A022236B8D7B00C8507D /* NewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE3A021236B8D7B00C8507D /* NewCustomerViewController.swift */; };
@@ -25,6 +28,9 @@
 		9B6D4AE6237500DA002C5CD2 /* customer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customer.png; sourceTree = "<group>"; };
 		9B928895236BB32A00396040 /* Customers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Customers.plist; sourceTree = "<group>"; };
 		9B928897236BB75D00396040 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		9BB507532375E39000E7B626 /* BillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailsViewController.swift; sourceTree = "<group>"; };
+		9BB507562375E77F00E7B626 /* extension+currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+currency.swift"; sourceTree = "<group>"; };
+		9BB507582375E80C00E7B626 /* extension+Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+Int.swift"; sourceTree = "<group>"; };
 		9BBBF41F2373829A00CD7A8C /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		9BE24962236B4750007D168F /* CustomerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewController.swift; sourceTree = "<group>"; };
 		9BE3A021236B8D7B00C8507D /* NewCustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCustomerViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +72,15 @@
 			path = Customer;
 			sourceTree = "<group>";
 		};
+		9BB507552375E74200E7B626 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9BB507562375E77F00E7B626 /* extension+currency.swift */,
+				9BB507582375E80C00E7B626 /* extension+Int.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9BFC24AE236B3F0A00DEE192 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +100,7 @@
 		9BFC24B9236B3F0A00DEE192 /* C0766343_MidTerm_MAD3115F2019 */ = {
 			isa = PBXGroup;
 			children = (
+				9BB507552375E74200E7B626 /* Extensions */,
 				9B928899236BB76700396040 /* Customer */,
 				9BFC24BA236B3F0A00DEE192 /* AppDelegate.swift */,
 				9BE3A023236B8E8C00C8507D /* LoginViewController.swift */,
@@ -97,6 +113,7 @@
 				9BE3A021236B8D7B00C8507D /* NewCustomerViewController.swift */,
 				9B928895236BB32A00396040 /* Customers.plist */,
 				9BBBF41F2373829A00CD7A8C /* Singleton.swift */,
+				9BB507532375E39000E7B626 /* BillDetailsViewController.swift */,
 			);
 			path = C0766343_MidTerm_MAD3115F2019;
 			sourceTree = "<group>";
@@ -178,8 +195,11 @@
 				9BE3A024236B8E8C00C8507D /* LoginViewController.swift in Sources */,
 				9BBBF4202373829A00CD7A8C /* Singleton.swift in Sources */,
 				9B928898236BB75D00396040 /* Customer.swift in Sources */,
+				9BB507542375E39000E7B626 /* BillDetailsViewController.swift in Sources */,
 				9BE3A022236B8D7B00C8507D /* NewCustomerViewController.swift in Sources */,
 				9BE24963236B4750007D168F /* CustomerListTableViewController.swift in Sources */,
+				9BB507572375E77F00E7B626 /* extension+currency.swift in Sources */,
+				9BB507592375E80C00E7B626 /* extension+Int.swift in Sources */,
 				9BFC24BB236B3F0A00DEE192 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
