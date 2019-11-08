@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B6D4AE7237500DA002C5CD2 /* customer.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D4AE6237500DA002C5CD2 /* customer.png */; };
 		9B928896236BB32A00396040 /* Customers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B928895236BB32A00396040 /* Customers.plist */; };
 		9B928898236BB75D00396040 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B928897236BB75D00396040 /* Customer.swift */; };
 		9BBBF4202373829A00CD7A8C /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBBF41F2373829A00CD7A8C /* Singleton.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B6D4AE6237500DA002C5CD2 /* customer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customer.png; sourceTree = "<group>"; };
 		9B928895236BB32A00396040 /* Customers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Customers.plist; sourceTree = "<group>"; };
 		9B928897236BB75D00396040 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		9BBBF41F2373829A00CD7A8C /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
@@ -47,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B6D4AE323750090002C5CD2 /* photos */ = {
+			isa = PBXGroup;
+			children = (
+				9B6D4AE6237500DA002C5CD2 /* customer.png */,
+				9BFC24CC236B403600DEE192 /* lambton.png */,
+			);
+			path = photos;
+			sourceTree = "<group>";
+		};
 		9B928899236BB76700396040 /* Customer */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,7 +90,7 @@
 				9BE3A023236B8E8C00C8507D /* LoginViewController.swift */,
 				9BFC24BE236B3F0A00DEE192 /* Main.storyboard */,
 				9BFC24C1236B3F0B00DEE192 /* Assets.xcassets */,
-				9BFC24CC236B403600DEE192 /* lambton.png */,
+				9B6D4AE323750090002C5CD2 /* photos */,
 				9BFC24C3236B3F0B00DEE192 /* LaunchScreen.storyboard */,
 				9BFC24C6236B3F0B00DEE192 /* Info.plist */,
 				9BE24962236B4750007D168F /* CustomerListTableViewController.swift */,
@@ -149,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BFC24C5236B3F0B00DEE192 /* LaunchScreen.storyboard in Resources */,
+				9B6D4AE7237500DA002C5CD2 /* customer.png in Resources */,
 				9BFC24C2236B3F0B00DEE192 /* Assets.xcassets in Resources */,
 				9B928896236BB32A00396040 /* Customers.plist in Resources */,
 				9BFC24C0236B3F0A00DEE192 /* Main.storyboard in Resources */,
