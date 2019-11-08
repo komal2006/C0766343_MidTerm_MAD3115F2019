@@ -36,13 +36,8 @@ class CustomerListTableViewController: UIViewController, UITableViewDataSource, 
     @IBOutlet weak var customerTV: UITableView!
      public var email: String?
     
-    @IBAction func newCustomerBtn(_ sender: UIBarButtonItem)
-    {
-        let sb1 = UIStoryboard(name: "Main", bundle: nil)
-        let NewCustomerVC = sb1.instantiateViewController(withIdentifier: "NewCustomerVC") as! NewCustomerViewController
-        navigationController?.pushViewController(NewCustomerVC, animated: true)
-      }
-        
+
+    
    
     
     override func viewDidLoad() {
@@ -52,7 +47,7 @@ class CustomerListTableViewController: UIViewController, UITableViewDataSource, 
         customerTV.dataSource=self
         navigationItem.hidesBackButton=true
        addLogoutButton()
-        addCustomerButton()
+        //addCustomerButton()
     }
     
 
@@ -88,6 +83,15 @@ class CustomerListTableViewController: UIViewController, UITableViewDataSource, 
     
     override func viewWillAppear(_ animated: Bool) {
         customerTV.reloadData()
+        
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        
+        let billListVC = sb.instantiateViewController(withIdentifier: "BillListVC") as! BillDetailsViewController
+        billListVC.billData=single.returnCustObject(custID: indexPath.row+1); self.navigationController?.pushViewController(billListVC, animated: true)
+        
         
     }
 
