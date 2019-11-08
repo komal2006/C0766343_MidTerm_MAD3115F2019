@@ -35,12 +35,26 @@ class Customer
         
 
 }
-    init(){
+    init()
+    {
         self.customerID = Int()
         self.customerFName = String()
         self.customerLName = String()
         self.email = String()
     }
+    
+    func addBillToCustomer(b:Bill){
+        billDictionary.updateValue(b, forKey: b.billId)
+    }
+    func calcTotalBillAmount() -> Float
+    {
+        totalBillAmount = 0
+//        for i in billDictionary.values
+//        {
+//            totalBillAmount += i.billAmount
+//        }
+//        return Float(totalBillAmount!)
+//    }
 
     
     
@@ -48,3 +62,4 @@ class Customer
 
 
 
+}

@@ -19,7 +19,7 @@ class BillDetailsViewController: UIViewController, UITableViewDelegate, UITableV
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-       // return (billData?.billDictionary.count)!
+        return (billData?.billDictionary.count)!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -52,8 +52,8 @@ class BillDetailsViewController: UIViewController, UITableViewDelegate, UITableV
         navigationItem.hidesBackButton=true
         lblCustomerID.text = billData?.customerID!.castString()
         lblCustomerName.text = billData?.fullName
-        lblEmail.text = billData?.customerEmail
-       // lblTotalAmount.t = billData?.totalBillAmount.currencyFormat()
+        lblEmail.text = billData?.email
+       //lblTotalAmount.t = billData?.totalBillAmount.currencyFormat()
         
     }
     
