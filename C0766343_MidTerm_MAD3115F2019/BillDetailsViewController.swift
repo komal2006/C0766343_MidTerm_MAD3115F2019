@@ -8,7 +8,33 @@
 
 import UIKit
 
-class BillDetailsViewController: UIViewController {
+class BillDetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
+    var billObj = Singleton.getInstance()
+    
+    func numberOfSections(in tableView: UITableView) -> Int
+    {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+       // return (billData?.billDictionary.count)!
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath)
+        let temp = billObj.returnCustObject(custID: Int(indexPath.row+1))
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String?
+    {
+        let header = "Bill Details"
+        return header
+    }
+    
     var billData : Customer? = nil
     @IBOutlet weak var lblCustomerID: UILabel!
     
