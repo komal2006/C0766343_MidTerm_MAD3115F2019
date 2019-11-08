@@ -19,19 +19,28 @@ class Customer
    
         
         
-    var customerEmail: String?
+    var email: String?
     
     
     var totalBillAmount : Float?
+    static var activeCustomer = Customer()
+    var billDictionary = [Int:Bill]()
     
-    init(customerID:Int,customerFName: String,customerLName:String,customerEmail:String) {
+    init(customerID:Int,customerFName: String,customerLName:String,email:String)
+    {
         self.customerID=customerID
         self.customerFName=customerFName
         self.customerLName=customerLName
-        self.customerEmail=customerEmail
+        self.email=email
         
 
 }
+    init(){
+        self.customerID = Int()
+        self.customerFName = String()
+        self.customerLName = String()
+        self.email = String()
+    }
 
     
     
