@@ -7,32 +7,28 @@
 //
 
 import Foundation
+
+enum typesOfBill: String {
+    case Mobile = "Mobile"
+    case Internet = "Internet"
+    case Hydro = "Hydro"
+}
+
 class Bill
 {
-    
-    var billId: Int
-    var billDate = String()
-    var billType: TypesOfBill
-    enum TypesOfBill{
-        case Internet
-        case Hydro
-        case Mobile
-    }
-    var billAmount: Float
+    var billID: Int
+    var billDate: Date
+    var billType: typesOfBill
+    var totalBillAmount: Float
     
     
-    init(billId: Int, billDate: String, billType: TypesOfBill, billAmount: Float) {
-        self.billId = billId
+   
+    init(Id: Int, billDate: Date, billType: typesOfBill, totalBillAmount: Float)
+    {
+        self.billID = Id
         self.billDate = billDate
-        self.billAmount  = billAmount
         self.billType = billType
+        self.totalBillAmount = totalBillAmount
     }
-    
-    func display(){
-        print("Bill ID: \(billId)")
-        print("Bill Date: \(billDate)")
-        print("Bill Type: \(billType)")
-        print("Bill Amount: \(billAmount.currencyFormat())")
-    }
-    
 }
+
