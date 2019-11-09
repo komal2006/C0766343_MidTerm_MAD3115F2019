@@ -55,21 +55,23 @@ class Singleton: NSObject
         let b1: Mobile = Mobile(Id: 1, billDate: Date(), billType: typesOfBill.Mobile, totalBillAmount: 80.20, mobileManufacturer: "Samsung S50", planName: "Talktime + Data", mobileNumber: "+16478300129", internetUsed: 20, minuteUsed: 40)
         let b2: Mobile = Mobile(Id: 2, billDate: Date(), billType: typesOfBill.Mobile, totalBillAmount: 40.98, mobileManufacturer: "Apple", planName: "LTE+3G 9.5GB Promo plan", mobileNumber: "+14567431990", internetUsed: 70, minuteUsed: 500)
         
-        let b3: Internet = Internet(Id: 1, billDate: Date(), billType: typesOfBill.Internet, totalBillAmount: 33.09, providerName: "Telus", internetUsed: 44)
-        let b4: Internet = Internet(Id: 2, billDate: Date(), billType: typesOfBill.Internet, totalBillAmount: 240.19, providerName: "Bell", internetUsed: 865)
+
         
-        let b5: Hydro = Hydro(Id: 1, billDate: Date(), billType: typesOfBill.Hydro, totalBillAmount: 765.98, agencyName: "Advantage", unitconsumed: 70)
-        let b6: Hydro = Hydro(Id: 2, billDate: Date(), billType: typesOfBill.Hydro, totalBillAmount: 476.8, agencyName: "EngineerAgency", unitconsumed: 98)
+        let b3: Hydro = Hydro(Id: 1, billDate: Date(), billType: typesOfBill.Hydro, totalBillAmount: 765.98, agencyName: "Advantage", unitconsumed: 70)
+        let b4: Hydro = Hydro(Id: 2, billDate: Date(), billType: typesOfBill.Hydro, totalBillAmount: 476.8, agencyName: "EngineerAgency", unitconsumed: 98)
+        
+        let b5: Internet = Internet(Id: 1, billDate: Date(), billType: typesOfBill.Internet, totalBillAmount: 33.09, providerName: "Telus", internetUsed: 44)
+        let b6: Internet = Internet(Id: 2, billDate: Date(), billType: typesOfBill.Internet, totalBillAmount: 240.19, providerName: "Bell", internetUsed: 865)
         
     let c1 = Customer(customerID: 1, customerFName: "Komaldeep", customerLName: "Kaur", customerEmail: "komaldeepkaur@gmail.com ")
         AddCustomer(customer: c1)
         c1.addBill(Bill: b1)
-        //c1.addBill(Bill: b4)
+        c1.addBill(Bill: b2)
         
         let c2 = Customer(customerID: 2, customerFName: "Charanpreet", customerLName: "kaur", customerEmail: "charanpreetkaur@gmail.com ")
         AddCustomer(customer: c2)
         c2.addBill(Bill: b1)
-        c2.addBill(Bill: b2)
+        c2.addBill(Bill: b4)
         c2.addBill(Bill: b6)
         
         let c3=Customer(customerID: 3, customerFName: "Varinder", customerLName: "Dhillon", customerEmail: "varinderdhillon@gmail.com")
@@ -81,11 +83,11 @@ class Singleton: NSObject
         AddCustomer(customer: c4)
 
       c4.addBill(Bill: b2)
-        c4.addBill(Bill: b6)
+        c4.addBill(Bill: b3)
       
         let c5 = Customer(customerID: 5, customerFName: "Harmanpreet", customerLName: "Singh", customerEmail: "camysandhu@gmail.com ")
         AddCustomer(customer: c4)
-        c4.addBill(Bill: b5)
+        c5.addBill(Bill: b5)
 
         
         
