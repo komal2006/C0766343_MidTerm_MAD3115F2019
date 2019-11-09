@@ -7,85 +7,108 @@
 //
 
 import Foundation
+
 class Singleton: NSObject
 {
-private var customerDictionary  = [Int:Customer]()
-
-private static var obj = Singleton()
-
-
-private override init() {
+     private var customerDictionary  = [Int:Customer]()
     
-}
-
-internal static func getInstance() -> Singleton
-{
-    return obj
-}
-
-func addNewCustomer(First_Name : String, Last_Name : String, email : String)
-{
-    let c = customerDictionary.count + 1
+    private static var single = Singleton()
     
-    let addCust = Customer(customerID: c, customerFName: First_Name, customerLName: Last_Name, email: email)
-    self.AddCustomer(customer: addCust)
-}
-
-func returnCustObject(custID : Int) -> Customer?
-{
-    for (k,v) in customerDictionary
+    
+    private override init() {
+        
+    }
+    
+    internal static func getInstance() -> Singleton
     {
-        if custID == k
+        return single
+    }
+    
+    func addNewCustomer(FirstName : String, LastName : String, Email : String)
+    {
+        let c = customerDictionary.count + 1
+        
+        let cust = Customer(customerID: c, customerFName: FirstName, customerLName: LastName, customerEmail: Email)
+        self.AddCustomer(customer: cust)
+    }
+    
+    func CustomerObj(custID : Int) -> Customer?
+    {
+        for (k,v) in customerDictionary
         {
-            return v
+            if custID == k
+            {
+                return v
+            }
+        }
+        return nil
+        
+    }
+    
+    func returnCount() -> Int
+    {
+        return customerDictionary.count
+    }
+    
+    func createCustomer()
+    {
+        let b1: Mobile = Mobile(Id: 1, billDate: Date(), billType: typesOfBill.Mobile, totalBillAmount: 80.20, mobileManufacturer: "Samsung S50", planName: "Talktime + Data", mobileNumber: "+16478300129", internetUsed: 20, minuteUsed: 40)
+        let b2: Mobile = Mobile(Id: 2, billDate: Date(), billType: typesOfBill.Mobile, totalBillAmount: 40.98, mobileManufacturer: "Apple", planName: "LTE+3G 9.5GB Promo plan", mobileNumber: "+14567431990", internetUsed: 70, minuteUsed: 500)
+        
+        let b3: Internet = Internet(Id: 1, billDate: Date(), billType: typesOfBill.Internet, totalBillAmount: 33.09, providerName: "Telus", internetUsed: 44)
+        let b4: Internet = Internet(Id: 2, billDate: Date(), billType: typesOfBill.Internet, totalBillAmount: 240.19, providerName: "Bell", internetUsed: 865)
+        
+        let b5: Hydro = Hydro(Id: 1, billDate: Date(), billType: typesOfBill.Hydro, totalBillAmount: 765.98, agencyName: "Advantage", unitconsumed: 70)
+        let b6: Hydro = Hydro(Id: 2, billDate: Date(), billType: typesOfBill.Hydro, totalBillAmount: 476.8, agencyName: "EngineerAgency", unitconsumed: 98)
+        
+    let c1 = Customer(customerID: 1, customerFName: "Komaldeep", customerLName: "Kaur", customerEmail: "komaldeepkaur@gmail.com ")
+        AddCustomer(customer: c1)
+        c1.addBill(Bill: b1)
+        //c1.addBill(Bill: b4)
+        
+        let c2 = Customer(customerID: 2, customerFName: "Charanpreet", customerLName: "kaur", customerEmail: "charanpreetkaur@gmail.com ")
+        AddCustomer(customer: c2)
+        c2.addBill(Bill: b1)
+        c2.addBill(Bill: b2)
+        c2.addBill(Bill: b6)
+        
+        let c3=Customer(customerID: 3, customerFName: "Varinder", customerLName: "Dhillon", customerEmail: "varinderdhillon@gmail.com")
+        AddCustomer(customer: c3)
+      c3.addBill(Bill: b2)
+        
+        
+    let c4 = Customer(customerID: 4, customerFName: "Simranjit", customerLName: "Singh", customerEmail: "simranjitsingh@gmail.com ")
+        AddCustomer(customer: c4)
+
+      c4.addBill(Bill: b2)
+        c4.addBill(Bill: b6)
+      
+        let c5 = Customer(customerID: 5, customerFName: "Harmanpreet", customerLName: "Singh", customerEmail: "camysandhu@gmail.com ")
+        AddCustomer(customer: c4)
+        c4.addBill(Bill: b5)
+
+        
+        
+        
+        
+        
+        
+    }
+    
+    
+
+    
+    func AddCustomer(customer: Customer)
+    {
+        customerDictionary.updateValue(customer, forKey: customer.customerID!)
+    }
+    func printdata()
+    {
+        for i in customerDictionary.values
+        {
+            print(i.customerFName!)
         }
     }
-    return nil
     
-}
 
-func returnCount() -> Int
-{
-    return customerDictionary.count
-}
-
-func createCust()
-{
-    let c1 = Customer(customerID: 01, customerFName: "Komaldeep", customerLName: "Kaur", email: "komaldeepkr99@gmail.com ")
-    AddCustomer(customer: c1)
-    let c2 = Customer(customerID: 02, customerFName: "Varinder", customerLName: "Dhilllon", email: "varinderdhillon@gmail.com ")
-    AddCustomer(customer: c2)
-    let c3 = Customer(customerID: 03, customerFName: "Charanpreet", customerLName: "Kaur",email: "charanpreet@gmail.com ")
-    AddCustomer(customer: c3)
-    let c4 = Customer(customerID: 04, customerFName: "Harmanpreet", customerLName: "Singh", email: "camysandhu@gmail.com ")
-    AddCustomer(customer: c4)
-    
-    let c5 = Customer(customerID: 05, customerFName: "Simarjit", customerLName: "Singh", email: "simar99@gmail.com ")
-    AddCustomer(customer: c5)
-    
-     let bill1ForCust1 = Hydro(billId: 1, billDate: "02-1-2014", billType: .Hydro, billAmount: 500.00, agency: "Tronto Hydro Services inc.", unitsConsumed: 121)
-    let bill2ForCust1 = Mobile(billId: 2, billDate: "25-10-2011", billType: .Mobile, billAmount: 490.00, mobileManufacturer: "Samsung", plan: "Talk + Internet", mobileNum: 1231231231, internetUsed: 5, minutesUsed: 950)
-    let bill3ForCust1 = Internet(billId: 3, billDate: "12-09-2015", billType: .Mobile, billAmount: 280.0, providerName: "Rogers", internetUsed: Int(900.0))
-   
-    c1.addBillToCustomer(b: bill1ForCust1)
-    c1.addBillToCustomer(b: bill2ForCust1)
-    c1.addBillToCustomer(b: bill3ForCust1)
-    
-    
-}
-
-
-
-
-func AddCustomer(customer: Customer)
-{
-    customerDictionary.updateValue(customer, forKey: customer.customerID!)
-}
-func printdata()
-{
-    for i in customerDictionary.values
-    {
-        print(i.customerFName!)
-    }
-}
 }
