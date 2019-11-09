@@ -18,9 +18,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var btnRememberMe: UISwitch!
     
    
-    override func viewDidLoad() {
-           super.viewDidLoad()
-        
+        override func viewDidLoad()
+        {
+                 super.viewDidLoad()
         
         
          let getdata = Singleton.getInstance()
@@ -35,7 +35,8 @@ class LoginViewController: UIViewController {
             txtPassword.text = userPassword as? String
         }
        }
-   
+  
+
     
     @IBAction func btnLogin(_ sender: UIButton) {
         
@@ -79,7 +80,7 @@ class LoginViewController: UIViewController {
                  let user = u as! NSDictionary
                 let uname = user["username"]! as! String
                 let pwd = user["password"]! as! String
-                if uname==txtUser.text! && pwd==txtPassword.text!
+                if uname == txtUser.text! && pwd == txtPassword.text!
                 {
                     return true
                 }
