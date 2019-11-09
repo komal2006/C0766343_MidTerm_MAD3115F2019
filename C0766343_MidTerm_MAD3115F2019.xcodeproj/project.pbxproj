@@ -7,19 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33E1E46823762C99007F5361 /* Extension_Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E1E46723762C99007F5361 /* Extension_Date.swift */; };
+		33E1E46A23762CB1007F5361 /* Extension_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E1E46923762CB1007F5361 /* Extension_String.swift */; };
+		33E1E46C23762CBF007F5361 /* Extension_Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E1E46B23762CBF007F5361 /* Extension_Int.swift */; };
+		33E1E46E23762CCE007F5361 /* Extension_Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E1E46D23762CCE007F5361 /* Extension_Float.swift */; };
+		33E1E47023762E02007F5361 /* Users.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33E1E46F23762E02007F5361 /* Users.plist */; };
+		33E1E47223762E21007F5361 /* AddBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E1E47123762E21007F5361 /* AddBillViewController.swift */; };
 		9B1D03F92375EB9000F381A9 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1D03F82375EB9000F381A9 /* Bill.swift */; };
 		9B1D03FB2375EB9C00F381A9 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1D03FA2375EB9C00F381A9 /* Mobile.swift */; };
 		9B1D03FD2375EBA800F381A9 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1D03FC2375EBA800F381A9 /* Hydro.swift */; };
 		9B1D03FF2375EBB800F381A9 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1D03FE2375EBB800F381A9 /* Internet.swift */; };
 		9B6D4AE7237500DA002C5CD2 /* customer.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D4AE6237500DA002C5CD2 /* customer.png */; };
-		9B928896236BB32A00396040 /* Customers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B928895236BB32A00396040 /* Customers.plist */; };
 		9B928898236BB75D00396040 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B928897236BB75D00396040 /* Customer.swift */; };
-		9BB507542375E39000E7B626 /* BillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB507532375E39000E7B626 /* BillDetailsViewController.swift */; };
-		9BB507572375E77F00E7B626 /* extension+currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB507562375E77F00E7B626 /* extension+currency.swift */; };
-		9BB507592375E80C00E7B626 /* extension+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB507582375E80C00E7B626 /* extension+Int.swift */; };
+		9BB507542375E39000E7B626 /* CustomerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB507532375E39000E7B626 /* CustomerDetailsViewController.swift */; };
 		9BBBF4202373829A00CD7A8C /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBBF41F2373829A00CD7A8C /* Singleton.swift */; };
-		9BE24963236B4750007D168F /* CustomerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE24962236B4750007D168F /* CustomerListTableViewController.swift */; };
-		9BE3A022236B8D7B00C8507D /* NewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE3A021236B8D7B00C8507D /* NewCustomerViewController.swift */; };
+		9BE24963236B4750007D168F /* CustomerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE24962236B4750007D168F /* CustomerListViewController.swift */; };
+		9BE3A022236B8D7B00C8507D /* AddCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE3A021236B8D7B00C8507D /* AddCustomerViewController.swift */; };
 		9BE3A024236B8E8C00C8507D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE3A023236B8E8C00C8507D /* LoginViewController.swift */; };
 		9BFC24BB236B3F0A00DEE192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFC24BA236B3F0A00DEE192 /* AppDelegate.swift */; };
 		9BFC24C0236B3F0A00DEE192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFC24BE236B3F0A00DEE192 /* Main.storyboard */; };
@@ -29,19 +32,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33E1E46723762C99007F5361 /* Extension_Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_Date.swift; sourceTree = "<group>"; };
+		33E1E46923762CB1007F5361 /* Extension_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_String.swift; sourceTree = "<group>"; };
+		33E1E46B23762CBF007F5361 /* Extension_Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_Int.swift; sourceTree = "<group>"; };
+		33E1E46D23762CCE007F5361 /* Extension_Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_Float.swift; sourceTree = "<group>"; };
+		33E1E46F23762E02007F5361 /* Users.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Users.plist; sourceTree = "<group>"; };
+		33E1E47123762E21007F5361 /* AddBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillViewController.swift; sourceTree = "<group>"; };
 		9B1D03F82375EB9000F381A9 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 		9B1D03FA2375EB9C00F381A9 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		9B1D03FC2375EBA800F381A9 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
 		9B1D03FE2375EBB800F381A9 /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
 		9B6D4AE6237500DA002C5CD2 /* customer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customer.png; sourceTree = "<group>"; };
-		9B928895236BB32A00396040 /* Customers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Customers.plist; sourceTree = "<group>"; };
 		9B928897236BB75D00396040 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
-		9BB507532375E39000E7B626 /* BillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailsViewController.swift; sourceTree = "<group>"; };
-		9BB507562375E77F00E7B626 /* extension+currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+currency.swift"; sourceTree = "<group>"; };
-		9BB507582375E80C00E7B626 /* extension+Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+Int.swift"; sourceTree = "<group>"; };
+		9BB507532375E39000E7B626 /* CustomerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailsViewController.swift; sourceTree = "<group>"; };
 		9BBBF41F2373829A00CD7A8C /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
-		9BE24962236B4750007D168F /* CustomerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewController.swift; sourceTree = "<group>"; };
-		9BE3A021236B8D7B00C8507D /* NewCustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCustomerViewController.swift; sourceTree = "<group>"; };
+		9BE24962236B4750007D168F /* CustomerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListViewController.swift; sourceTree = "<group>"; };
+		9BE3A021236B8D7B00C8507D /* AddCustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCustomerViewController.swift; sourceTree = "<group>"; };
 		9BE3A023236B8E8C00C8507D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9BFC24B7236B3F0A00DEE192 /* C0766343_MidTerm_MAD3115F2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C0766343_MidTerm_MAD3115F2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BFC24BA236B3F0A00DEE192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +69,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33E1E46623762C7C007F5361 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				33E1E46723762C99007F5361 /* Extension_Date.swift */,
+				33E1E46923762CB1007F5361 /* Extension_String.swift */,
+				33E1E46B23762CBF007F5361 /* Extension_Int.swift */,
+				33E1E46D23762CCE007F5361 /* Extension_Float.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9B1D03F72375EB7400F381A9 /* Bills */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,15 +98,6 @@
 				9BFC24CC236B403600DEE192 /* lambton.png */,
 			);
 			path = photos;
-			sourceTree = "<group>";
-		};
-		9BB507552375E74200E7B626 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				9BB507562375E77F00E7B626 /* extension+currency.swift */,
-				9BB507582375E80C00E7B626 /* extension+Int.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		9BFC24AE236B3F0A00DEE192 = {
@@ -112,20 +120,21 @@
 			isa = PBXGroup;
 			children = (
 				9B1D03F72375EB7400F381A9 /* Bills */,
-				9BB507552375E74200E7B626 /* Extensions */,
 				9BFC24BA236B3F0A00DEE192 /* AppDelegate.swift */,
 				9B928897236BB75D00396040 /* Customer.swift */,
 				9BE3A023236B8E8C00C8507D /* LoginViewController.swift */,
+				33E1E46623762C7C007F5361 /* Extensions */,
 				9BFC24BE236B3F0A00DEE192 /* Main.storyboard */,
 				9BFC24C1236B3F0B00DEE192 /* Assets.xcassets */,
 				9B6D4AE323750090002C5CD2 /* photos */,
 				9BFC24C3236B3F0B00DEE192 /* LaunchScreen.storyboard */,
 				9BFC24C6236B3F0B00DEE192 /* Info.plist */,
-				9BE24962236B4750007D168F /* CustomerListTableViewController.swift */,
-				9BE3A021236B8D7B00C8507D /* NewCustomerViewController.swift */,
-				9B928895236BB32A00396040 /* Customers.plist */,
+				33E1E46F23762E02007F5361 /* Users.plist */,
+				9BE24962236B4750007D168F /* CustomerListViewController.swift */,
+				9BE3A021236B8D7B00C8507D /* AddCustomerViewController.swift */,
 				9BBBF41F2373829A00CD7A8C /* Singleton.swift */,
-				9BB507532375E39000E7B626 /* BillDetailsViewController.swift */,
+				9BB507532375E39000E7B626 /* CustomerDetailsViewController.swift */,
+				33E1E47123762E21007F5361 /* AddBillViewController.swift */,
 			);
 			path = C0766343_MidTerm_MAD3115F2019;
 			sourceTree = "<group>";
@@ -189,9 +198,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BFC24C5236B3F0B00DEE192 /* LaunchScreen.storyboard in Resources */,
+				33E1E47023762E02007F5361 /* Users.plist in Resources */,
 				9B6D4AE7237500DA002C5CD2 /* customer.png in Resources */,
 				9BFC24C2236B3F0B00DEE192 /* Assets.xcassets in Resources */,
-				9B928896236BB32A00396040 /* Customers.plist in Resources */,
 				9BFC24C0236B3F0A00DEE192 /* Main.storyboard in Resources */,
 				9BFC24CD236B403600DEE192 /* lambton.png in Resources */,
 			);
@@ -205,16 +214,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BE3A024236B8E8C00C8507D /* LoginViewController.swift in Sources */,
+				33E1E47223762E21007F5361 /* AddBillViewController.swift in Sources */,
+				33E1E46C23762CBF007F5361 /* Extension_Int.swift in Sources */,
 				9BBBF4202373829A00CD7A8C /* Singleton.swift in Sources */,
+				33E1E46A23762CB1007F5361 /* Extension_String.swift in Sources */,
 				9B928898236BB75D00396040 /* Customer.swift in Sources */,
-				9BB507542375E39000E7B626 /* BillDetailsViewController.swift in Sources */,
+				9BB507542375E39000E7B626 /* CustomerDetailsViewController.swift in Sources */,
 				9B1D03FD2375EBA800F381A9 /* Hydro.swift in Sources */,
-				9BE3A022236B8D7B00C8507D /* NewCustomerViewController.swift in Sources */,
-				9BE24963236B4750007D168F /* CustomerListTableViewController.swift in Sources */,
+				9BE3A022236B8D7B00C8507D /* AddCustomerViewController.swift in Sources */,
+				9BE24963236B4750007D168F /* CustomerListViewController.swift in Sources */,
 				9B1D03FB2375EB9C00F381A9 /* Mobile.swift in Sources */,
 				9B1D03F92375EB9000F381A9 /* Bill.swift in Sources */,
-				9BB507572375E77F00E7B626 /* extension+currency.swift in Sources */,
-				9BB507592375E80C00E7B626 /* extension+Int.swift in Sources */,
+				33E1E46823762C99007F5361 /* Extension_Date.swift in Sources */,
+				33E1E46E23762CCE007F5361 /* Extension_Float.swift in Sources */,
 				9B1D03FF2375EBB800F381A9 /* Internet.swift in Sources */,
 				9BFC24BB236B3F0A00DEE192 /* AppDelegate.swift in Sources */,
 			);
