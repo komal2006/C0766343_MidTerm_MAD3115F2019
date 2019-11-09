@@ -5,61 +5,41 @@
 //  Created by MacStudent on 2019-10-19.
 //  Copyright © 2019 MacStudent. All rights reserved.
 //
-
 import Foundation
+
 class Customer
 {
     var customerID : Int?
     var customerFName: String?
     var customerLName : String?
-    var fullName : String
-    {
+    var fullName : String{
         return customerFName! + " " + customerLName!
     }
-   
-        
-        
-    var email: String?
+      var customerEmail: String?
     
+  
     
-    var totalBillAmount : Float?
-    static var activeCustomer = Customer()
-    var billDictionary = [Int:Bill]()
+  var billDictionary = [Int:Bill]()
     
-    init(customerID:Int,customerFName: String,customerLName:String,email:String)
+    var TotalAmountToPay: Float // computed variable
     {
+        var TotalAmount: Float = 0.0
+        
+        for bill in billDictionary
+        {
+            TotalAmount = TotalAmount + bill.value.totalBillAmount
+        }
+        return TotalAmount
+    }
+    func addBill(Bill : Bill)
+    {
+        billDictionary.updateValue(Bill, forKey: Bill.billID)
+    }
+    
+    init(customerID:Int,customerFName: String,customerLName:String,customerEmail:String) {
         self.customerID=customerID
         self.customerFName=customerFName
         self.customerLName=customerLName
-        self.email=email
-        
-
-}
-    init()
-    {
-        self.customerID = Int()
-        self.customerFName = String()
-        self.customerLName = String()
-        self.email = String()
+        self.customerEmail=customerEmail
     }
-    
-    func addBillToCustomer(b:Bill){
-        billDictionary.updateValue(b, forKey: b.billId)
-    }
-//    func calcTotalBillAmount() -> Float
-//    {
-//        totalBillAmount = 0
-//        for i in billDictionary.values
-//        {
-//            totalBillAmount += i.billAmount
-//        }
-//        return Float(totalBillAmount!)
-//    }
-
-    
-    
-    
-
-
-
 }
